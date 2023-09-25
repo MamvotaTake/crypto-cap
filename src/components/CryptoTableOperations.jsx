@@ -1,5 +1,5 @@
 import React from 'react'
-import TableOperations from './TableOperations'
+import TableOperations from './table/TableOperations'
 import Filter from './Filter'
 
 function CryptoTableOperations () {
@@ -14,7 +14,7 @@ function CryptoTableOperations () {
           { value: 'energy', label: 'Energy' },
           { value: 'gaming', label: 'Gaming' },
           { value: 'music', label: 'Music' },
-          { value: 'see-all', label: 'See all 12+' },
+          { value: 'see-all', label: 'See all 12+' }
         ]}
       />
     </TableOperations>

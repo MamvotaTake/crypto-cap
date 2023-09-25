@@ -18,11 +18,13 @@ import Divider from '../components/Divider'
 import Heading from '../components/Heading'
 import ButtonIcon from '../components/button/ButtonIcon'
 import CryptoTableOperations from '../components/CryptoTableOperations'
+import SearchBar from '../components/SearchBar'
+import CoinTable from '../components/CoinTable'
 
 const StyledHome = styled.div`
   display: flex;
   flex-direction: column;
-  background-image: url(${bgAbove});
+  /* background-image: url(${bgAbove}); */
   /* background-color: #000a09;
   filter: blur(1); */
   gap: 2.5rem;
@@ -192,15 +194,23 @@ const LearnContainer = styled.div`
 `
 
 const CryptoCategoryContainer = styled.div`
-    padding: 3rem 5.625rem;
+  padding: 3rem 5.625rem;
 
-    p{
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-    }
+  p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  div{
+    display:flex;
+    justify-content: space-between;
+  }
 `
+const BASE_URL = "http://localhost:8000/coins";
 
-function Home () {
+
+function Home() {
+  
   return (
     <StyledHome>
       <HeroSection>
@@ -399,20 +409,22 @@ function Home () {
           </div>
           <Button size='medium'>Learn & Explore Now</Button>
         </LearnContainer>
-
       </StyledFeature>
       <CryptoCategoryContainer>
         <Heading>Market Update</Heading>
         <p>Cryptocurrency Categories</p>
-        <CryptoTableOperations />
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
+        <div>
+          <CryptoTableOperations />
+        </div>
+        <CoinTable/>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
       </CryptoCategoryContainer>
     </StyledHome>
   )
