@@ -3,7 +3,8 @@ import styled, { css } from 'styled-components'
 
 const sizes = {
   small: css`
-        
+        width: 3rem;
+        font-size: 0.7rem;
     `,
 
   medium: css`

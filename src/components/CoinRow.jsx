@@ -3,6 +3,10 @@ import Table from './table/Table'
 import styled from 'styled-components'
 import itsHigh from '../assets/chart-state-plus.png'
 import itsLow from '../assets/chart-state-minus.png'
+import Menus from './Menus'
+import { HiPencil, HiSquare2Stack, HiTrash } from 'react-icons/hi2'
+import Modal from './Modal'
+import Button from './button/Button'
 
 const Stacked = styled.div`
   display: flex;
@@ -26,9 +30,9 @@ const Image = styled.img`
   height: 2.75rem;
   flex-shrink: 0;
 `
-function CoinRow ({
-  coin: {
-    id,
+function CoinRow ({ coin, index }) {
+  const {
+    market_cap_rank: coinId,
     name,
     symbol,
     current_price,
@@ -37,14 +41,13 @@ function CoinRow ({
     image,
     market_cap_change_percentage_24h,
     price_change_24h
-  },
-  index
-}) {
+  } = coin
+
   return (
     <Table.Row>
       <Stacked>
         <Image src={image} alt='' />
-          {/* {name} */}
+        {/* {name} */}
         <span>
           {symbol}
         </span>
@@ -63,7 +66,14 @@ function CoinRow ({
           : <img src={itsLow} alt='' />}
       </Stacked>
       <Stacked>
-        <p>...</p>
+        <Modal>
+          <Modal.Open opens='trade'>
+            <Button size='small'>Trade</Button>
+          </Modal.Open>
+          <Modal.Window name='trade'>
+            <p>Trade</p>
+        </Modal.Window>
+        </Modal>
       </Stacked>
     </Table.Row>
   )

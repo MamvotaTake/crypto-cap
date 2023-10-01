@@ -1,17 +1,33 @@
 import React, { useEffect, useState } from 'react'
 import Table from './table/Table'
 import CoinRow from './CoinRow'
+import Pagination from './Pagination'
+import { useDispatch, useSelector } from 'react-redux'
+import { coin } from '../features/coins/coinSlice'
+import styled from 'styled-components'
 
+const Error = styled.div`
+  background-color: var(--color-lime-50);
+`
 function CoinTable () {
-  const [coins, setCoins] = useState('')
-  useEffect(() => {
-    async function loadCoins () {
-      const response = await fetch('http://localhost:8000/coins')
-      const data = await response.json()
-      setCoins(data)
-    }
-    loadCoins()
-  }, [])
+  const { coins } = useSelector(store => store.coin)
+  const dispatch = useDispatch()
+  // console.log(coins)
+
+  useEffect(
+    function () {
+      async function laodCoins () {
+        try {
+           dispatch(coin())
+        } catch (error) {}
+      }
+      laodCoins()
+    },
+    [dispatch]
+  )
+
+  // if(!coins.length) return <Error>There is a problem with server, please write us an email!</Error>
+
   return (
     <Table columns='0.6fr 1.8fr 2.2fr 1fr 1fr 1fr'>
       <Table.Header scope='row'>
@@ -25,11 +41,11 @@ function CoinTable () {
       <Table.Body
         data={coins}
         render={(coin, index) =>
-          <CoinRow key={index} coin={coin} index={index} />}
+          <CoinRow key={index} coin={coin} index={coin.id} />}
       />
 
       <Table.Footer>
-        <p>Pagination</p>
+        <Pagination />
       </Table.Footer>
     </Table>
   )
