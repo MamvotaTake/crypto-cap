@@ -6,19 +6,20 @@ import { useDispatch, useSelector } from 'react-redux'
 import { coin } from '../features/coins/coinSlice'
 import styled from 'styled-components'
 
-const Error = styled.div`
-  background-color: var(--color-lime-50);
-`
+const Error = styled.div`background-color: var(--color-lime-50);`
 function CoinTable () {
   const { coins } = useSelector(store => store.coin)
   const dispatch = useDispatch()
-  // console.log(coins)
+
+  const slicedItems = coins
+    .slice(0, 7)
+    .sort((a, b) => a.price_change_24h - b.price_change_24h)
 
   useEffect(
     function () {
       async function laodCoins () {
         try {
-           dispatch(coin())
+          dispatch(coin())
         } catch (error) {}
       }
       laodCoins()
@@ -39,7 +40,7 @@ function CoinTable () {
       </Table.Header>
 
       <Table.Body
-        data={coins}
+        data={slicedItems}
         render={(coin, index) =>
           <CoinRow key={index} coin={coin} index={coin.id} />}
       />

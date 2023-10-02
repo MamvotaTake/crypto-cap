@@ -24,6 +24,7 @@ const Button = styled.button`
   border: none;
   color: #fff;
   font-family: "Raleway";
+  cursor: pointer;
   font-size: 1rem;
   font-weight: 600;
   font-style: normal;
@@ -31,6 +32,11 @@ const Button = styled.button`
   border-radius: 0.625rem;
   ${props => sizes[props.size]};
   background-color: #0fae96;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: var(--color-lime-400);
+  }
 `
 
 Button.defaultProps = {

@@ -18,13 +18,13 @@ const StyledTrends = styled.div`
 `
 
 function Trends () {
-  const { coins } = useSelector(state => state.coin)
+  const {coins}  = useSelector(state => state.coin) || {}
   const dispatch = useDispatch()
-  const sortedCoins = [...coins]
+console.log(coins)
 
-  console.log(sortedCoins.sort(
-    (a, b) => a.price_change_percentage_24h - b.price_change_percentage_24h
-  ))
+  // console.log(sortedCoins.sort(
+  //   (a, b) => a.price_change_percentage_24h - b.price_change_percentage_24h
+  // ))
 
   useEffect(
     () => {
@@ -46,18 +46,16 @@ function Trends () {
       <h1>Market Trend</h1>
       <Row type='horizontal'>
         <>
-          {sortedCoins
-          .sort(
-            (a, b) =>
-              a.price_change_percentage_24 - b.price_change_percentage_24
-          )
-          .slice(0, 3)
-          .map(coin => 
+          {coins.map(coin => 
             <Card key={coin.id}>
               <CoinInfo coin={coin } />
               <Rates coin={coin }/>
             </Card>
-          )}
+          ).sort(
+            (a, b) =>
+              a.price_change_percentage_24 - b.price_change_percentage_24
+          )
+          .slice(0, 3)}
         </>
       </Row>
     </StyledTrends>

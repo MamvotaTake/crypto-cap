@@ -9,6 +9,7 @@ const Card = styled.div`
   /* gap: 1.0625rem; */
   align-self: stretch;
   margin-bottom: 1.2rem;
+  flex: 1 1 0;
 
   border-radius: 1.125rem;
   border: 1px solid var(--wireframe-color-light-grey, #eaeaea);

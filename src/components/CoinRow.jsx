@@ -4,7 +4,14 @@ import styled from 'styled-components'
 import itsHigh from '../assets/chart-state-plus.png'
 import itsLow from '../assets/chart-state-minus.png'
 import Menus from './Menus'
-import { HiPencil, HiSquare2Stack, HiTrash } from 'react-icons/hi2'
+import {
+  HiArrowDownRight,
+  HiArrowSmallDown,
+  HiArrowSmallUp,
+  HiPencil,
+  HiSquare2Stack,
+  HiTrash
+} from 'react-icons/hi2'
 import Modal from './Modal'
 import Button from './button/Button'
 
@@ -59,11 +66,14 @@ function CoinRow ({ coin, index }) {
         style={{ color: price_change_percentage_24h < 0 ? 'red' : 'green' }}
       >
         {price_change_percentage_24h.toFixed(2)}%
+        {price_change_percentage_24h > 0
+          ? <HiArrowSmallUp />
+          : <HiArrowSmallDown/>}
       </Stacked>
       <Stacked>
-        {market_cap_change_percentage_24h > 0
-          ? <img src={itsHigh} alt='' />
-          : <img src={itsLow} alt='' />}
+        {price_change_percentage_24h < 0
+          ? <img src={itsLow} alt='' />
+          : <img src={itsHigh} alt='' />}
       </Stacked>
       <Stacked>
         <Modal>
@@ -72,7 +82,7 @@ function CoinRow ({ coin, index }) {
           </Modal.Open>
           <Modal.Window name='trade'>
             <p>Trade</p>
-        </Modal.Window>
+          </Modal.Window>
         </Modal>
       </Stacked>
     </Table.Row>

@@ -1,6 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
-import coinSlice from "./features/coins/coinSlice";
-import newsSlice from "./features/news/newsSlice";
+import coinSlice from "./coins/coinSlice";
+import newsSlice from "./news/newsSlice";
 
 const store = configureStore({
     reducer: {

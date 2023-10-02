@@ -17,6 +17,7 @@ import ButtonIcon from '../components/button/ButtonIcon'
 import CryptoTableOperations from '../components/CryptoTableOperations'
 import CoinTable from '../components/CoinTable'
 import Trends from '../components/Trends'
+import GetStarted from '../components/getStarted/GetStarted'
 
 const StyledHome = styled.div`
   display: flex;
@@ -56,9 +57,6 @@ const Paragraph = styled.p`
   color: var(--font-color-subtitle-color, #4d625f);
   text-align: center;
 `
-
-
-
 
 const StyledFeature = styled.div`
   display: flex;
@@ -139,7 +137,7 @@ function Home () {
         </HeroContent>
 
         <Row>
-          <Trends/>
+          <Trends />
         </Row>
       </HeroSection>
       <StyledFeature>
@@ -237,8 +235,10 @@ function Home () {
         </div>
         <CoinTable />
         <br />
-        
       </CryptoCategoryContainer>
+
+      <GetStarted />
+      
     </StyledHome>
   )
 }
