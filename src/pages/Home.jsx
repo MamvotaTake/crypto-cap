@@ -18,6 +18,7 @@ import CryptoTableOperations from '../components/CryptoTableOperations'
 import CoinTable from '../components/CoinTable'
 import Trends from '../components/Trends'
 import GetStarted from '../components/getStarted/GetStarted'
+import Footer from '../components/footer/Footer'
 
 const StyledHome = styled.div`
   display: flex;
@@ -238,6 +239,8 @@ function Home () {
       </CryptoCategoryContainer>
 
       <GetStarted />
+
+      <Footer/>
       
     </StyledHome>
   )
