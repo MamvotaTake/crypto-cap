@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Logo from '../Logo'
+import footerBg from '../../assets/footer.png'
 import { CiFacebook, CiInstagram, CiTwitter, CiYoutube } from 'react-icons/ci'
 
 const StyledFooter = styled.footer`
@@ -8,7 +9,10 @@ const StyledFooter = styled.footer`
   justify-content: space-between;
   padding: 3rem 5.625rem;
   gap: 2rem;
-  background: rgba(255, 255, 255, 0.05);
+  /* background: rgba(255, 255, 255, 0.05); */
+  background-image: url(${footerBg});
+  background-repeat: no-repeat;
+  background-position: center 50px;
   border-top: 1px solid var(--color-grey-100);
 `
 const StyledLinks = styled.div`
@@ -30,6 +34,31 @@ const SocialMediaLinks = styled.ul`
   & svg {
     width: 1.4rem;
     height: 1.4rem;
+  }
+`
+
+const LinkCointainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+
+  p {
+    font-size: 1.2rem !important;
+    font-weight: 500;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    cursor: pointer;
+  }
+
+  li {
+    transition: color 0.3s ease;
+    &:hover {
+      color: var(--color-lime-100);
+    }
   }
 `
 
@@ -55,7 +84,7 @@ function Footer () {
         <p>2023 CoinMarketCap. All rights reserved</p>
       </SocialMedia>
       <StyledLinks>
-        <div>
+        <LinkCointainer>
           <p>About Us</p>
           <ul>
             <li>About</li>
@@ -63,8 +92,8 @@ function Footer () {
             <li>Blog</li>
             <li>Legal & privacy</li>
           </ul>
-        </div>
-        <div>
+        </LinkCointainer>
+        <LinkCointainer>
           <p>Services</p>
           <ul>
             <li>Aplications</li>
@@ -72,8 +101,8 @@ function Footer () {
             <li>Affilliate</li>
             <li>Institutional Services</li>
           </ul>
-        </div>
-        <div>
+        </LinkCointainer>
+        <LinkCointainer>
           <p>Learn</p>
           <ul>
             <li>What is Cryptocurency?</li>
@@ -81,7 +110,7 @@ function Footer () {
             <li>Tips and Tutorials</li>
             <li>Market Update</li>
           </ul>
-        </div>
+        </LinkCointainer>
       </StyledLinks>
     </StyledFooter>
   )

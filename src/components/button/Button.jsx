@@ -8,8 +8,9 @@ const sizes = {
     `,
 
   medium: css`
+    width: 11rem;
     font-family: "Raleway";
-    padding: 1rem 1.5rem;
+    padding: 0.4rem;
     font-size: 1rem;
     `,
 

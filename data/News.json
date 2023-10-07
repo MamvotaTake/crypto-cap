@@ -1,0 +1,319 @@
+{
+    "news": [
+        {
+            "news_url": "https://ambcrypto.com/a-rundown-of-what-transpired-with-btc-eth-and-the-rest-in-q3/",
+            "image_url": "https://crypto.snapi.dev/images/v1/i/p/bitcoins-cryto-1200x900-375194.png",
+            "title": "A rundown of what transpired with BTC, ETH, and the rest in Q3",
+            "text": "21Shares released an in-depth report of what went down in the sector across all levels. In this report, you'll find interesting developments around Chainlink, Bitcoin and a host of others.",
+            "source_name": "AMBCrypto",
+            "date": "Fri, 06 Oct 2023 20:30:42 -0400",
+            "topics": [],
+            "sentiment": "Positive",
+            "type": "Article",
+            "tickers": [
+                "BTC",
+                "ETH"
+            ]
+        },
+        {
+            "news_url": "https://news.bitcoin.com/investment-manager-expects-sec-to-approve-all-bitcoin-etf-applications-in-3-6-months/",
+            "image_url": "https://crypto.snapi.dev/images/v1/s/e/bitcoin-etf-768x432-375195.jpg",
+            "title": "Investment Manager Expects SEC to Approve All Bitcoin ETF Applications in 3-6 Months",
+            "text": "Steven Schoenfeld, former head of International Equity Product Strategy at Barclays Global Investors (now Blackrock), expects the U.S. Securities and Exchange Commission (SEC) to approve all spot bitcoin exchange-traded fund (ETF) applications in three to six months.",
+            "source_name": "Bitcoin",
+            "date": "Fri, 06 Oct 2023 20:30:17 -0400",
+            "topics": [
+                "regulations"
+            ],
+            "sentiment": "Positive",
+            "type": "Article",
+            "tickers": [
+                "BTC"
+            ]
+        },
+        {
+            "news_url": "https://beincrypto.com/btc-price-following-positive-nfp-report/",
+            "image_url": "https://crypto.snapi.dev/images/v1/e/m/bic-bitcoin-bullish-positive-market-up-3-375186.png",
+            "title": "Bitcoin (BTC) Price Nears $30,000 Following Positive Non-Farm Payroll Report",
+            "text": "Bitcoin's (BTC) price jumped 2% after the US Bureau of Labor Statistics published the September non-farm payrolls report on Friday. A vital on-chain indicator suggests that BTC is in a prime position of bullish price action in the coming weeks.",
+            "source_name": "BeInCrypto",
+            "date": "Fri, 06 Oct 2023 19:00:00 -0400",
+            "topics": [
+                "pricemovement"
+            ],
+            "sentiment": "Positive",
+            "type": "Article",
+            "tickers": [
+                "BTC"
+            ]
+        },
+        {
+            "news_url": "https://thecurrencyanalytics.com/bitcoin/bitcoin-price-in-flux-as-us-job-market-data-loomsw-74033.php",
+            "image_url": "https://crypto.snapi.dev/images/v1/a/m/bitcoin2-3-375180.jpg",
+            "title": "Bitcoin Price in Flux as US Job Market Data Loomsw",
+            "text": "As anticipation mounts, investors eagerly await crucial job data from the United States set to be unveiled this Friday. Preliminary figures for September's job growth have raised eyebrows, as they fell short of expectations.",
+            "source_name": "The Currency Analytics",
+            "date": "Fri, 06 Oct 2023 18:48:39 -0400",
+            "topics": [
+                "pricemovement"
+            ],
+            "sentiment": "Negative",
+            "type": "Article",
+            "tickers": [
+                "BTC"
+            ]
+        },
+        {
+            "news_url": "https://dailyhodl.com/2023/10/06/whales-move-over-730000000-in-bitcoin-ethereum-dogecoin-and-xrp-heres-where-the-cryptos-going/",
+            "image_url": "https://crypto.snapi.dev/images/v1/b/l/whales-move-over-600jpgw1024-375173.jpg",
+            "title": "Whales Move Over $730,000,000 in Bitcoin, Ethereum, Dogecoin and XRP – Here's Where the Crypto's Going",
+            "text": "New data reveals that deep-pocketed crypto investors are suddenly shifting hundreds of millions of dollars worth of Bitcoin (BTC) and other digital assets.",
+            "source_name": "The Daily Hodl",
+            "date": "Fri, 06 Oct 2023 18:01:43 -0400",
+            "topics": [
+                "whales",
+                "pricemovement"
+            ],
+            "sentiment": "Positive",
+            "type": "Article",
+            "tickers": [
+                "BTC",
+                "DOGE",
+                "ETH",
+                "XRP"
+            ]
+        },
+        {
+            "news_url": "https://decrypt.co/200491/bitcoin-miner-iris-energy-jumps-9-as-it-boosts-mining-capacity-ahead-of-bitcoin-halving",
+            "image_url": "https://crypto.snapi.dev/images/v1/u/y/bitcoin-mining-operations-gid-7jpg-at-png-375163.jpg",
+            "title": "Bitcoin Miner Iris Energy Jumps 9% as It Boosts Mining Capacity Ahead of Bitcoin Halving",
+            "text": "The company's new machines should ship before the April 2024 Bitcoin halving.",
+            "source_name": "Decrypt",
+            "date": "Fri, 06 Oct 2023 17:16:14 -0400",
+            "topics": [
+                "mining",
+                "pricemovement"
+            ],
+            "sentiment": "Positive",
+            "type": "Article",
+            "tickers": [
+                "BTC"
+            ]
+        },
+        {
+            "news_url": "https://www.newsbtc.com/bitcoin-news/bitcoin-price-projection-soars-btc-gold-ratio-indicator-proposes-120000-price-target/",
+            "image_url": "https://crypto.snapi.dev/images/v1/p/k/shutterstock-download-12jpgfit3962c260-375162.jpg",
+            "title": "Bitcoin Price Projection Soars: BTC-Gold Ratio Indicator Proposes $120,000 Price Target",
+            "text": "Over the past week, Bitcoin price has displayed a notable bullish momentum. This comes after a prolonged consolidation phase during which the leading cryptocurrency remained stagnant below the $27,000 mark for an entire month.",
+            "source_name": "NewsBTC",
+            "date": "Fri, 06 Oct 2023 17:00:17 -0400",
+            "topics": [
+                "pricemovement"
+            ],
+            "sentiment": "Positive",
+            "type": "Article",
+            "tickers": [
+                "BTC"
+            ]
+        },
+        {
+            "news_url": "https://dailyhodl.com/2023/10/06/bitcoin-poised-to-more-than-double-every-year-says-pantera-capital-ceo-dan-morehead/",
+            "image_url": "https://crypto.snapi.dev/images/v1/a/9/bitcoin-more-than-yearjpgw1024-375148.jpg",
+            "title": "Bitcoin Poised To ‘More Than Double' Every Year, Says Pantera Capital CEO Dan Morehead",
+            "text": "Pantera Capital CEO Dan Morehead thinks Bitcoin's (BTC) uninspired price action over the previous two years has just been a temporary deviation away from the top crypto asset's larger growth trend. Morehead says in a new interview with CNBC that he expects BTC to resume its explosive price gains soon.",
+            "source_name": "The Daily Hodl",
+            "date": "Fri, 06 Oct 2023 16:00:45 -0400",
+            "topics": [],
+            "sentiment": "Positive",
+            "type": "Article",
+            "tickers": [
+                "BTC"
+            ]
+        },
+        {
+            "news_url": "https://dailyhodl.com/2023/10/06/crypto-trader-breaks-down-bitcoin-btc-pre-halving-trends-anticipates-more-volatility-ahead/",
+            "image_url": "https://crypto.snapi.dev/images/v1/u/q/btc-breakout-imminentjpgw1024-375146.jpg",
+            "title": "Crypto Trader Breaks Down Bitcoin (BTC) Pre-Halving Trends, Anticipates More Volatility Ahead",
+            "text": "A widely followed crypto analyst is plotting out Bitcoin's (BTC) most likely moves as the king crypto approaches a halving next year. Pseudonymous crypto trader Rekt Capital tells his 357,300 followers on the social media platform X that regardless of BTC's next move, the flagship crypto asset will be worth around $30,000 heading into April 2024.",
+            "source_name": "The Daily Hodl",
+            "date": "Fri, 06 Oct 2023 15:55:49 -0400",
+            "topics": [],
+            "sentiment": "Positive",
+            "type": "Article",
+            "tickers": [
+                "BTC"
+            ]
+        },
+        {
+            "news_url": "https://www.coindesk.com/markets/2023/10/06/bitcoin-grapples-with-28k-resistance-but-uncorrelated-asset-allure-could-mean-higher-prices-says-analyst/",
+            "image_url": "https://crypto.snapi.dev/images/v1/e/e/shutterstock-2084161063-374348-375147.jpg",
+            "title": "Bitcoin Grapples with $28K Resistance, but ‘Uncorrelated Asset' Allure Could Mean Higher Prices, Says Analyst",
+            "text": "Bitcoin is on track for gains on Friday despite bearish U.S. jobs numbers which initially sent the crypto down nearly 2%.",
+            "source_name": "Coindesk",
+            "date": "Fri, 06 Oct 2023 15:49:28 -0400",
+            "topics": [
+                "tanalysis",
+                "pricemovement"
+            ],
+            "sentiment": "Positive",
+            "type": "Article",
+            "tickers": [
+                "BTC"
+            ]
+        },
+        {
+            "news_url": "https://bitcoinworld.co.in/btc-vs-eth-switch/?utm_source=snapi",
+            "image_url": "https://crypto.snapi.dev/images/v1/o/6/whatsapp-image-2023-10-06-at-184410-450x300-375127.jpeg",
+            "title": "Time to switch back to Bitcoin and “pull the brakes” on Ethereum: K33 report",
+            "text": "“Within the cryptocurrency sphere, the current gravitational force remains firmly tethered to BTC,” declared Vetle Lunde, the senior analyst at K33.",
+            "source_name": "Bitcoinworld",
+            "date": "Fri, 06 Oct 2023 15:16:34 -0400",
+            "topics": [],
+            "sentiment": "Neutral",
+            "type": "Article",
+            "tickers": [
+                "BTC",
+                "ETH"
+            ]
+        },
+        {
+            "news_url": "https://bitcoinworld.co.in/bitcoin-output/?utm_source=snapi",
+            "image_url": "https://crypto.snapi.dev/images/v1/x/o/whatsapp-image-2023-10-06-at-184003-450x300-375125.jpeg",
+            "title": "In September, the output of Bitcoin miners Marathon, Riot, and CleanSpark increases.",
+            "text": "Marathon Digital marked a remarkable milestone in September, producing an astounding 1,242 Bitcoin, accounting for an unprecedented 4.3% share of the Bitcoin miner rewards pie.",
+            "source_name": "Bitcoinworld",
+            "date": "Fri, 06 Oct 2023 15:12:45 -0400",
+            "topics": [
+                "mining"
+            ],
+            "sentiment": "Positive",
+            "type": "Article",
+            "tickers": [
+                "BTC"
+            ]
+        },
+        {
+            "news_url": "https://bitcoinworld.co.in/cocoa-broker-ftx/?utm_source=snapi",
+            "image_url": "https://crypto.snapi.dev/images/v1/8/i/whatsapp-image-2023-10-06-at-183506-450x300-375121.jpeg",
+            "title": "A cocoa broker testifies in the Sam Bankman-Fried trial about storing Bitcoin on FTX.",
+            "text": "In November 2022, Marc-Antoine Julliard, a cocoa broker based in London, found himself in the spotlight as he fielded questions from prosecutors regarding his cryptocurrency holdings on FTX.",
+            "source_name": "Bitcoinworld",
+            "date": "Fri, 06 Oct 2023 15:07:45 -0400",
+            "topics": [],
+            "sentiment": "Neutral",
+            "type": "Article",
+            "tickers": [
+                "BTC"
+            ]
+        },
+        {
+            "news_url": "https://www.benzinga.com/markets/cryptocurrency/23/10/35128236/exclusive-tim-draper-on-artificial-intelligence-bitcoin-his-best-investment-return?utm_source=snapi",
+            "image_url": "https://crypto.snapi.dev/images/v1/d/t/tim-draper-razreportjpgoptimizemediumdpr1autowebpheight800width1456fitcrop-375118.jpg",
+            "title": "EXCLUSIVE: Tim Draper On Artificial Intelligence, Bitcoin, His Best Investment Return",
+            "text": "Perhaps best known for his price targets on Bitcoin (CRYPTO: BTC), Tim Draper is a venture capital investor who was an early investor in many well-known technology companies. In an exclusive interview, Draper shares his take on future technology, Bitcoin and more.",
+            "source_name": "Benzinga",
+            "date": "Fri, 06 Oct 2023 15:00:23 -0400",
+            "topics": [],
+            "sentiment": "Positive",
+            "type": "Article",
+            "tickers": [
+                "BTC"
+            ]
+        },
+        {
+            "news_url": "https://bitcoinworld.co.in/btc-price-fluc/?utm_source=snapi",
+            "image_url": "https://crypto.snapi.dev/images/v1/0/m/whatsapp-image-2023-10-06-at-180514-450x300-375112.jpeg",
+            "title": "Since the price of bitcoin overlooks the fluctuating US dollar, traders hope $27K holds.",
+            "text": "“On October 4th, Bitcoin appeared remarkably stable when compared to the U.S. Dollar Index.",
+            "source_name": "Bitcoinworld",
+            "date": "Fri, 06 Oct 2023 14:57:19 -0400",
+            "topics": [
+                "pricemovement"
+            ],
+            "sentiment": "Positive",
+            "type": "Article",
+            "tickers": [
+                "BTC"
+            ]
+        },
+        {
+            "news_url": "https://zycrypto.com/max-keiser-predicts-bitcoin-short-term-astronomical-flight-to-220000-as-all-hell-breaks-loose/",
+            "image_url": "https://crypto.snapi.dev/images/v1/i/l/massive-bitcoin-outflows-rock-crypto-exchanges-spelling-ultra-bullish-sentiments-for-btc-768x448-375107.jpg",
+            "title": "Max Keiser Predicts Bitcoin Short-Term Astronomical Flight To $220,000 As “All Hell Breaks Loose”",
+            "text": "Max Keiser, a well-known Bitcoin advocate and advisor to the president of El Salvador, has expressed an optimistic outlook for Bitcoin's near-term trajectory.",
+            "source_name": "Zycrypto",
+            "date": "Fri, 06 Oct 2023 14:51:23 -0400",
+            "topics": [
+                "pricemovement"
+            ],
+            "sentiment": "Positive",
+            "type": "Article",
+            "tickers": [
+                "BTC"
+            ]
+        },
+        {
+            "news_url": "https://dailyhodl.com/2023/10/06/u-s-sec-will-probably-approve-all-spot-bitcoin-etfs-at-the-same-time-says-ex-blackrock-managing-director/",
+            "image_url": "https://crypto.snapi.dev/images/v1/z/g/all-spot-etf-samejpgw1024-375103.jpg",
+            "title": "U.S. SEC Will Probably Approve All Spot Bitcoin ETFs at the Same Time, Says Ex-BlackRock Managing Director",
+            "text": "A former executive at global investment titan BlackRock says US regulators will likely give their nod to all spot Bitcoin (BTC) exchange-traded fund (ETF) applications at once.",
+            "source_name": "The Daily Hodl",
+            "date": "Fri, 06 Oct 2023 14:45:22 -0400",
+            "topics": [
+                "regulations"
+            ],
+            "sentiment": "Positive",
+            "type": "Article",
+            "tickers": [
+                "BTC"
+            ]
+        },
+        {
+            "news_url": "https://thecurrencyanalytics.com/bitcoin/bitcoin-shows-signs-of-recovery-amidst-volatility-73997.php",
+            "image_url": "https://crypto.snapi.dev/images/v1/o/l/bitcoin-11-375091.jpg",
+            "title": "Bitcoin Shows Signs of Recovery Amidst Volatility",
+            "text": "Bitcoin's price journey in recent times has been nothing short of a rollercoaster ride. It began with a climb above the 50% Fibonacci retracement level, retracing the decline from the $28,565 swing high to the $27,189 low.",
+            "source_name": "The Currency Analytics",
+            "date": "Fri, 06 Oct 2023 14:27:21 -0400",
+            "topics": [],
+            "sentiment": "Positive",
+            "type": "Article",
+            "tickers": [
+                "BTC"
+            ]
+        },
+        {
+            "news_url": "https://dailyhodl.com/2023/10/06/bitcoin-to-120000-glassnode-co-founders-say-one-indicator-is-flashing-a-ready-to-fly-signal/",
+            "image_url": "https://crypto.snapi.dev/images/v1/a/q/btc-flying-offjpgw1024-375083.jpg",
+            "title": "Bitcoin to $120,000? Glassnode Co-Founders Say One Indicator Is Flashing a ‘Ready-To-Fly' Signal",
+            "text": "The co-founders of the crypto analytics firm Glassnode believe that Bitcoin (BTC) could soar into six figures early next year. Glassnode co-founders Jan Happel and Yann Allemann, who share the handle Negentropic on the social media platform X, say that the king crypto appears ready to greatly outperform gold on a rally toward $120,000.",
+            "source_name": "The Daily Hodl",
+            "date": "Fri, 06 Oct 2023 14:05:55 -0400",
+            "topics": [
+                "priceforecast",
+                "pricemovement"
+            ],
+            "sentiment": "Positive",
+            "type": "Article",
+            "tickers": [
+                "BTC"
+            ]
+        },
+        {
+            "news_url": "https://www.newsbtc.com/bitcoin-news/bitcoin-news-here-is-when-btc-could-revisit-20000-one-last-time-analyst-says/",
+            "image_url": "https://crypto.snapi.dev/images/v1/m/0/bitcoin-news-btc-btcusdt-btc-price-1jpgfit6402c427-375081.jpg",
+            "title": "Bitcoin News: Here Is When BTC Could Revisit $20,000 One Last Time, Analyst Says",
+            "text": "Based on several factors, the latest Bitcoin news points to a potential bullish continuation in the long term. However, the short term remains uncertain; the cryptocurrency continues to trade in a tight range, although BTC has shown a spike in volatility.",
+            "source_name": "NewsBTC",
+            "date": "Fri, 06 Oct 2023 14:00:50 -0400",
+            "topics": [
+                "pricemovement"
+            ],
+            "sentiment": "Positive",
+            "type": "Article",
+            "tickers": [
+                "BTC"
+            ]
+        }
+    ]
+}

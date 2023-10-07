@@ -21,6 +21,7 @@ const StyledHeader = styled.div`
   background-color: #bde4df;
   /* filter: blur(1); */
   /* color: white; */
+  z-index: 1;
 `
 
 function Header () {

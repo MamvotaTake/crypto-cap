@@ -37,7 +37,8 @@ const Image = styled.img`
   height: 2.75rem;
   flex-shrink: 0;
 `
-function CoinRow ({ coin, index }) {
+function CoinRow({ coin, index }) {
+  
   const {
     market_cap_rank: coinId,
     name,

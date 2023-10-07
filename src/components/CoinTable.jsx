@@ -5,21 +5,26 @@ import Pagination from './Pagination'
 import { useDispatch, useSelector } from 'react-redux'
 import { coin } from '../features/coins/coinSlice'
 import styled from 'styled-components'
+import { fetchCoins, selectAllCoins, selectTotalCoins } from '../features/coins/coinsSlice'
+import Spinner from './Spinner'
 
 const Error = styled.div`background-color: var(--color-lime-50);`
 function CoinTable () {
-  const { coins } = useSelector(store => store.coin)
+  const coins = useSelector(selectAllCoins)
+  const isLoading = useSelector(state => state.coins.isLoading)
+
+  // const { coins } = useSelector(store => store.coin)
   const dispatch = useDispatch()
 
-  const slicedItems = coins
+  /* const slicedItems = coins
     .slice(0, 7)
     .sort((a, b) => a.price_change_24h - b.price_change_24h)
-
+ */
   useEffect(
     function () {
       async function laodCoins () {
         try {
-          dispatch(coin())
+          dispatch(fetchCoins())
         } catch (error) {}
       }
       laodCoins()
@@ -27,8 +32,8 @@ function CoinTable () {
     [dispatch]
   )
 
-  // if(!coins.length) return <Error>There is a problem with server, please write us an email!</Error>
-
+  if (isLoading) return <Spinner />
+  
   return (
     <Table columns='0.6fr 1.8fr 2.2fr 1fr 1fr 1fr'>
       <Table.Header scope='row'>
@@ -40,7 +45,7 @@ function CoinTable () {
       </Table.Header>
 
       <Table.Body
-        data={slicedItems}
+        data={coins}
         render={(coin, index) =>
           <CoinRow key={index} coin={coin} index={coin.id} />}
       />

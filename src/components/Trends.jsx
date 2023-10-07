@@ -5,42 +5,37 @@ import Card from './cards/Card'
 import CoinInfo from '../features/coins/CoinInfo'
 import Rates from '../features/coins/Rates'
 import { useDispatch, useSelector } from 'react-redux'
-import { coin } from '../features/coins/coinSlice'
+import { fetchCoins, selectAllCoins, selectTotalCoins } from '../features/coins/coinsSlice'
+import Spinner from './Spinner'
 
 const StyledTrends = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2.6rem;
-  overflow: hidden;
+  overflow-y: auto;
   padding: 3rem 5.625rem;
-  /* scroll-behavior: smooth;
-    scrollbar-arrow-color: red; */
+
 `
 
 function Trends () {
-  const {coins}  = useSelector(state => state.coin) || {}
+  const coins = useSelector(selectAllCoins) || {}
+  const isLoading = useSelector(state => state.coins.isLoading)
+  
   const dispatch = useDispatch()
-console.log(coins)
 
-  // console.log(sortedCoins.sort(
-  //   (a, b) => a.price_change_percentage_24h - b.price_change_percentage_24h
-  // ))
 
   useEffect(
     () => {
       function getCoins () {
-        dispatch(coin())
+        dispatch(fetchCoins())
       }
       getCoins()
     },
     [dispatch]
   )
 
-  // sort by price_change_percentage_24h
+  if(isLoading) return <Spinner/>
 
-  /* coins.sort(
-    (a, b) => a.price_change_percentage_24h - b.price_change_percentage_24h
-  ) */
   return (
     <StyledTrends>
       <h1>Market Trend</h1>
@@ -55,7 +50,7 @@ console.log(coins)
             (a, b) =>
               a.price_change_percentage_24 - b.price_change_percentage_24
           )
-          .slice(0, 3)}
+          .slice(0, 4)}
         </>
       </Row>
     </StyledTrends>

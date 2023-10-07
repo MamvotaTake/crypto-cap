@@ -4,12 +4,13 @@ import Header from './header/Header'
 import styled from 'styled-components'
 
 const AppContainer = styled.div`
-    
+    z-index: -1;
 
 `
 const MainContainer = styled.div`
     height: 100vh;
     /* padding: 3rem 5.625rem; */
+    
 `
 
 function AppLayout () {

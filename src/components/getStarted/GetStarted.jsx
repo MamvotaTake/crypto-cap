@@ -6,6 +6,7 @@ import Button from '../button/Button'
 import Card from '../cards/Card'
 import { HiCheckBadge, HiMiniCreditCard, HiUserPlus } from 'react-icons/hi2'
 import ButtonIcon from '../button/ButtonIcon'
+import NewsBanner from '../news/NewsBanner'
 
 const Container = styled.div`
   display: flex;
@@ -51,7 +52,8 @@ const StepsContainer = styled.div`
 `
 function GetStarted () {
   return (
-    <Container>
+    <>
+      <Container>
       <Content>
         <Heading as='h2'>How To Get Started</Heading>
         <p>Simple and easy way to start your investment in cryptocurrency</p>
@@ -79,8 +81,11 @@ function GetStarted () {
             <p>Buy and sell popular currencies and keep track of them.</p>
           </div>
         </Step>
-          </StepsContainer>
+      </StepsContainer>
+      
     </Container>
+      <NewsBanner/>
+    </>
   )
 }
 

@@ -19,6 +19,7 @@ import CoinTable from '../components/CoinTable'
 import Trends from '../components/Trends'
 import GetStarted from '../components/getStarted/GetStarted'
 import Footer from '../components/footer/Footer'
+import NewsBanner from '../components/news/NewsBanner'
 
 const StyledHome = styled.div`
   display: flex;
@@ -124,6 +125,8 @@ const CryptoCategoryContainer = styled.div`
     justify-content: space-between;
   }
 `
+
+
 
 function Home () {
   return (
