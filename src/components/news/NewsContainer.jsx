@@ -25,13 +25,16 @@ const StyledNews = styled.div`
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: minmax(10rem, auto);
   gap: 1rem;
-  /* z-index: -1; */
+
+   @media (max-width: ${({ theme }) => theme.mobile}) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 5rem 0 0rem;
+  }
   
 `
 
-const Container = styled(StyledNews)`
-  
-`
+const Container = styled(StyledNews)``
 function NewsContainer () {
   return (
       <>

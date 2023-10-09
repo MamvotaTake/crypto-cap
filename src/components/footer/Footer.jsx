@@ -14,6 +14,19 @@ const StyledFooter = styled.footer`
   background-repeat: no-repeat;
   background-position: center 50px;
   border-top: 1px solid var(--color-grey-100);
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 5rem 0 0rem;
+  }
+`
+
+const Copyright = styled.p`
+  /* @media (max-width: ${({ theme }) => theme.mobile}) {
+    display: flex;
+    justify-content: center;
+  } */
 `
 const StyledLinks = styled.div`
   display: flex;
@@ -25,6 +38,12 @@ const SocialMedia = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
+
+  p {
+    @media (max-width: ${({ theme }) => theme.mobile}) {
+      display: none;
+    }
+  }
 `
 
 const SocialMediaLinks = styled.ul`
@@ -45,6 +64,12 @@ const LinkCointainer = styled.div`
   p {
     font-size: 1.2rem !important;
     font-weight: 500;
+
+    @media (max-width: ${({ theme }) => theme.mobile}) {
+      width: 20rem;
+      /* font-size: 1.2rem !important; */
+      font-weight: 700;
+    }
   }
 
   ul {

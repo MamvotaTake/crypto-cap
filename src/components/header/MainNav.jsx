@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import {
   HiOutlineCalendarDays,
@@ -13,7 +13,12 @@ import Logo from '../Logo'
 const NavList = styled.ul`
   display: flex;
   gap: 1rem;
-  
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    display: flex;
+    flex-direction: column;
+    
+  }
 `
 
 const StyledNavLink = styled(NavLink)`
@@ -55,7 +60,9 @@ const StyledNavLink = styled(NavLink)`
   }
 `
 
-function MainNav () {
+function MainNav() {
+  const [open, setOpen] = useState(false)
+
   return (
     <nav>
       <NavList>

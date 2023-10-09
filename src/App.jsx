@@ -8,28 +8,34 @@ import Trade from './pages/Trade'
 import Market from './pages/Market'
 import Learn from './pages/Learn'
 import News from './pages/News'
+import { ThemeProvider } from 'styled-components'
 
+const theme = {
+  mobile: '768px',
+}
 
 function App() {
 
   return (
-    <>
-      <GlobalStyles />
-      <BrowserRouter>
-        <Routes>
-          <Route element={<AppLayout />}>
-            <Route index element={<Navigate replace to="home" />} />
-            <Route path='home' element={<Home />} />
-            <Route path='businesses' element={<Businesses />} />
-            <Route path='trade' element={<Trade />} />
-            <Route path='market' element={<Market />} />
-            <Route path='Learn' element={<Learn />} />
-            <Route path='news' element={<News/>} />
-          </Route>
-        </Routes>
-        
-      </BrowserRouter>
-    </>
+    <ThemeProvider theme={theme}>
+      <>
+        <GlobalStyles />
+        <BrowserRouter>
+          <Routes>
+            <Route element={<AppLayout />}>
+              <Route index element={<Navigate replace to="home" />} />
+              <Route path='home' element={<Home />} />
+              <Route path='businesses' element={<Businesses />} />
+              <Route path='trade' element={<Trade />} />
+              <Route path='market' element={<Market />} />
+              <Route path='Learn' element={<Learn />} />
+              <Route path='news' element={<News/>} />
+            </Route>
+          </Routes>
+          
+        </BrowserRouter>
+      </>
+    </ThemeProvider>
   )
 }
 
