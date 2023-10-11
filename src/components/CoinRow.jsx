@@ -14,6 +14,8 @@ import {
 } from 'react-icons/hi2'
 import Modal from './Modal'
 import Button from './button/Button'
+import Coin from './convert/Coin'
+import CoinDetails from '../features/coins/CoinDetails'
 
 const Stacked = styled.div`
   display: flex;
@@ -29,6 +31,7 @@ const Stacked = styled.div`
     color: var(--color-grey-500);
     font-size: 1rem;
     font-weight: bold;
+    text-transform: uppercase;
   }
 `
 
@@ -37,8 +40,7 @@ const Image = styled.img`
   height: 2.75rem;
   flex-shrink: 0;
 `
-function CoinRow({ coin, index }) {
-  
+function CoinRow ({ coin, index }) {
   const {
     market_cap_rank: coinId,
     name,
@@ -48,7 +50,10 @@ function CoinRow({ coin, index }) {
     price_change_percentage_24h,
     image,
     market_cap_change_percentage_24h,
-    price_change_24h
+    price_change_24h,
+    high_24h,
+    low_24h,
+    total_volume
   } = coin
 
   return (
@@ -57,24 +62,30 @@ function CoinRow({ coin, index }) {
         <Image src={image} alt='' />
         {/* {name} */}
         <span>
+          {/* {name} */}
           {symbol}
         </span>
       </Stacked>
       <Stacked>
         $ {current_price.toFixed(2)}
       </Stacked>
+
       <Stacked
         style={{ color: price_change_percentage_24h < 0 ? 'red' : 'green' }}
       >
         {price_change_percentage_24h.toFixed(2)}%
         {price_change_percentage_24h > 0
           ? <HiArrowSmallUp />
-          : <HiArrowSmallDown/>}
+          : <HiArrowSmallDown />}
       </Stacked>
       <Stacked>
-        {price_change_percentage_24h < 0
-          ? <img src={itsLow} alt='' />
-          : <img src={itsHigh} alt='' />}
+        {`${high_24h.toFixed(2)} / ${low_24h.toFixed(2)}`}
+      </Stacked>
+      <Stacked>
+        {price_change_24h.toFixed(2)}
+      </Stacked>
+      <Stacked>
+        {market_cap_change_percentage_24h.toFixed(2)}
       </Stacked>
       <Stacked>
         <Modal>
@@ -82,7 +93,7 @@ function CoinRow({ coin, index }) {
             <Button size='small'>Trade</Button>
           </Modal.Open>
           <Modal.Window name='trade'>
-            <p>Trade</p>
+            <CoinDetails coin={coin}/>
           </Modal.Window>
         </Modal>
       </Stacked>

@@ -3,29 +3,40 @@ import styled from 'styled-components'
 
 const CommonRow = styled.div`
   display: grid;
-  grid-template-columns: ${props => props.columns};
-  column-gap: 2.9rem;
+  grid-template-rows: repeat(7, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
   align-items: center;
   transition: none;
+  padding: 1rem 1rem;
+  border-radius: 0.25rem 0.25rem 0rem 0rem;
+  border: 1px solid var(--wireframe-color-light-grey, #eaeaea);
+  background: var(--font-color-pure-white, #fff);
+
+  color: var(--wireframe-color-grey-subtitle, #808080);
+  align-items: left;
+
+  /* font-weight: 700; */
 `
 
-const StyledHeader = styled(CommonRow)`
-    display: flex;
-    padding: 1rem 2rem;
-    border-radius: 0.25rem 0.25rem 0rem 0rem;
-    border: 1px solid var(--wireframe-color-light-grey, #EAEAEA);
-    background: var(--font-color-pure-white, #FFF);
+const StyledHeader = styled.div`
+  padding: 1rem 1rem;
+  border-radius: 0.25rem 0.25rem 0rem 0rem;
+  border: 1px solid var(--wireframe-color-light-grey, #eaeaea);
+  background: var(--font-color-pure-white, #ebe8e8);
 
-    color: var(--wireframe-color-grey-subtitle, #808080);
-    font-family: "Raleway";
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
-    align-items: self-start;
+  color: var(--wireframe-color-grey-subtitle, #808080);
+  font-family: "Raleway";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  align-items: left;
 `
 
 const StyledBody = styled.section`
-  margin: 0.4rem 0;
+  /* display: flex; */
+
+  /* margin: 0.4rem 0; */
   /* border: 1px solid red; */
 `
 
@@ -61,23 +72,23 @@ function Header ({ children }) {
   const { columns } = useContext(TableContext)
 
   return (
-    <StyledHeader role='row' columns={columns}>
+    <StyledHeader columns={columns}>
       {children}
     </StyledHeader>
   )
 }
 
-function Row ({ children, ...rest }) {
+function Row ({ children }) {
   const { columns } = useContext(TableContext)
   return (
-    <StyledHeader scope='row' {...rest} columns={columns}>
+    <CommonRow scope='row' columns={columns}>
       {children}
-    </StyledHeader>
+    </CommonRow>
   )
 }
 
 function Body ({ data, render }) {
-  // if (!data.length) return <Empty />
+  if (!data.length) return <Empty />
   return (
     <StyledBody>
       {data.map(render)}

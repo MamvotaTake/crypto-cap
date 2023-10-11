@@ -13,28 +13,26 @@ const StyledHeader = styled.div`
   align-items: center;
   padding: 0rem 5.625rem;
   height: 5.625rem;
-  justify-content: space-between;
+  gap: 3rem;
+  /* justify-content: space-between; */
   border-bottom: 1px solid var(--wireframe-color-light-grey, #eaeaea);
   box-shadow: 0px 1px 1px 0px rgba(223, 221, 221, 0.75);
   overflow: hidden;
-  background-color: #bde4df;
+  background-color: #f0f7f6;
   z-index: 1;
 
-  @media (max-width: ${({ theme }) => theme.mobile}) {
-    /* position: relative; */
+  /* @media (max-width: ${({ theme }) => theme.mobile}) {
     display: flex;
     justify-content: space-between;
-    /* background-color: red; */
     font-weight: 700;
     z-index: 10000;
-  }
+  } */
 `
 
 function Header () {
   return (
     <StyledHeader>
       <Logo />
-      <BurgerMenu/>
       <MainNav />
     </StyledHeader>
   )

@@ -35,13 +35,17 @@ function CoinTable () {
   if (isLoading) return <Spinner />
   
   return (
-    <Table columns='0.6fr 1.8fr 2.2fr 1fr 1fr 1fr'>
+    <Table>
       <Table.Header scope='row'>
-        <div>NAME</div>
-        <div>CURRENT PRICE</div>
-        <div>CHANGE</div>
-        <div>MARKET STATS</div>
-        <div>TRADE</div>
+        <h5>Coin</h5>
+        <h5>Price</h5>
+        <h5>24h Change</h5>
+        <h5>24h High/24h Low</h5>
+        <h5>Price Change 24h</h5>
+        <h5>Market Cap</h5>
+        <h5>Operation</h5>
+        <div></div>
+
       </Table.Header>
 
       <Table.Body

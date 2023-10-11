@@ -84,7 +84,7 @@ function GetStarted () {
       </StepsContainer>
       
     </Container>
-      <NewsBanner/>
+      {/* <NewsBanner/> */}
     </>
   )
 }

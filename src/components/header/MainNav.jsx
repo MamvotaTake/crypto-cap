@@ -14,11 +14,11 @@ const NavList = styled.ul`
   display: flex;
   gap: 1rem;
 
-  @media (max-width: ${({ theme }) => theme.mobile}) {
+  /* @media (max-width: ${({ theme }) => theme.mobile}) {
     display: flex;
     flex-direction: column;
     
-  }
+  } */
 `
 
 const StyledNavLink = styled(NavLink)`
@@ -40,9 +40,8 @@ const StyledNavLink = styled(NavLink)`
   &:active,
   &.active:link,
   &.active:visited {
-    color: var(--color-lime-800);
-    background-color: var(--color-grey-50);
-    border-radius: var(--border-radius-sm);
+    color: var(--color-lime-600);
+    /* border-radius: var(--border-radius-sm); */
   }
 
   & svg {
@@ -69,18 +68,19 @@ function MainNav() {
         <li>
           <StyledNavLink to='/home '>Home</StyledNavLink>
         </li>
-        <li>
-          <StyledNavLink to='/businesses'>Businesses</StyledNavLink>
-        </li>
-        <li>
+        
+        {/* <li>
           <StyledNavLink to='/trade'>Trade</StyledNavLink>
+        </li> */}
+        <li>
+          <StyledNavLink to='/markets'>Markets</StyledNavLink>
         </li>
         <li>
-          <StyledNavLink to='/market'>Market</StyledNavLink>
+          <StyledNavLink to='/convert'>Convert</StyledNavLink>
         </li>
-        <li>
+        {/* <li>
           <StyledNavLink to='/learn'>Learn</StyledNavLink>
-        </li>
+        </li> */}
         <li>
           <StyledNavLink to='/news'>News</StyledNavLink>
         </li>

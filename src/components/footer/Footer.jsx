@@ -64,12 +64,6 @@ const LinkCointainer = styled.div`
   p {
     font-size: 1.2rem !important;
     font-weight: 500;
-
-    @media (max-width: ${({ theme }) => theme.mobile}) {
-      width: 20rem;
-      /* font-size: 1.2rem !important; */
-      font-weight: 700;
-    }
   }
 
   ul {
