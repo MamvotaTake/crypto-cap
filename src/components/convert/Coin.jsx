@@ -39,7 +39,6 @@ const CoinContent = styled.div`
 `
 
 function Coin ({ coin }) {
-  console.log(coin)
   const { image, symbol, name } = coin
   return (
     <Container>

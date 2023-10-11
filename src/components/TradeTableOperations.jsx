@@ -8,9 +8,9 @@ function TradeTableOperations ({coin}) {
       <Filter
         filterField='filterBy'
         options={[
-          /* { value: 'favorites', label: 'Favorites' },
+          { value: 'favorites', label: 'Favorites' },
           { value: 'spot-markets', label: 'Spot Markets' },
-          { value: 'future-markets', label: 'Future Markets' }, */
+          { value: 'future-markets', label: 'Future Markets' },
           { value: 'usdt', label: 'USDT' },
         ]}
       />

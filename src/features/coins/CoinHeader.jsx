@@ -14,10 +14,12 @@ const CoinListHeader = styled.header`
   /* background-color: #f0f7f6; */
 `
 
-function CoinHeader () {
+function CoinHeader ({ header }) {
   return (
     <CoinListHeader>
-      <Heading as='h3'>Select Coin to Convert (from)</Heading>
+      <Heading as='h1'>
+        {header}
+      </Heading>
       <FormRow label='Search' type='search'>
         <Input type='search' id='name' placeholder='Bitcoin' />
         <Stacked type='search'>

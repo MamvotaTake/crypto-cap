@@ -8,6 +8,7 @@ const StyledFormRow = styled.div`
   gap: 2.4rem;
   border: 1px solid var(--color-grey-300);
   border-radius: var(--border-radius-sm);
+  margin-top: .4rem;
 
   /* padding: 1.2rem 0; */
 
