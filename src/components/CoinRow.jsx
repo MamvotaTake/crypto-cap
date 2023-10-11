@@ -90,7 +90,7 @@ function CoinRow ({ coin, index }) {
       <Stacked>
         <Modal>
           <Modal.Open opens='trade'>
-            <Button size='small'>Trade</Button>
+            <Button size='small'>details</Button>
           </Modal.Open>
           <Modal.Window name='trade'>
             <CoinDetails coin={coin}/>
