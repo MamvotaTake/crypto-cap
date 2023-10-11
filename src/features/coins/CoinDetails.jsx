@@ -157,7 +157,7 @@ function CoinDetails ({ coin }) {
               color: price_change_percentage_24h < 0 ? 'red' : 'green'
             }}
           >
-            {market_cap_rank}
+            {`Rank ≈ ${market_cap_rank}`}
             {price_change_percentage_24h > 0
               ? <img src={isHigh} alt='' />
               : <img src={isLow} alt='' />}
