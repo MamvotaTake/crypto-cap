@@ -1,21 +1,12 @@
 import React from 'react'
 import Table from './table/Table'
 import styled from 'styled-components'
-import itsHigh from '../assets/chart-state-plus.png'
-import itsLow from '../assets/chart-state-minus.png'
-import Menus from './Menus'
-import {
-  HiArrowDownRight,
-  HiArrowSmallDown,
-  HiArrowSmallUp,
-  HiPencil,
-  HiSquare2Stack,
-  HiTrash
-} from 'react-icons/hi2'
+import { HiArrowSmallDown, HiArrowSmallUp } from 'react-icons/hi2'
 import Modal from './Modal'
 import Button from './button/Button'
-import Coin from './convert/Coin'
 import CoinDetails from '../features/coins/CoinDetails'
+import Spinner from './Spinner'
+import { selectAllCoins } from '../features/coins/coinsSlice'
 
 const Stacked = styled.div`
   display: flex;
@@ -41,6 +32,7 @@ const Image = styled.img`
   flex-shrink: 0;
 `
 function CoinRow ({ coin, index }) {
+
   const {
     market_cap_rank: coinId,
     name,
@@ -55,6 +47,8 @@ function CoinRow ({ coin, index }) {
     low_24h,
     total_volume
   } = coin
+
+  
 
   return (
     <Table.Row>
@@ -93,7 +87,7 @@ function CoinRow ({ coin, index }) {
             <Button size='small'>details</Button>
           </Modal.Open>
           <Modal.Window name='trade'>
-            <CoinDetails coin={coin}/>
+            <CoinDetails coin={coin} />
           </Modal.Window>
         </Modal>
       </Stacked>
