@@ -1,6 +1,7 @@
+import { motion } from 'framer-motion'
 import styled from 'styled-components'
 
-const Card = styled.div`
+const Card = styled(motion.div)`
   flex: 1 0 0;
   padding: 1.125rem 1.25rem 1.125rem 1.1875rem;
   flex-direction: column;

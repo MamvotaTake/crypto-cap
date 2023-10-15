@@ -20,6 +20,7 @@ import Trends from '../components/Trends'
 import GetStarted from '../components/getStarted/GetStarted'
 import Footer from '../components/footer/Footer'
 import NewsBanner from '../components/news/NewsBanner'
+import { motion } from 'framer-motion'
 
 const StyledHome = styled.div`
   display: flex;
@@ -75,7 +76,7 @@ const FeaturedContent = styled.div`
   gap: 1.2rem;
 `
 
-const FeaturesContainer = styled.div`
+const FeaturesContainer = styled(motion.div)`
   display: flex;
   justify-content: space-between;
   margin-top: 4.5rem;
@@ -126,8 +127,6 @@ const CryptoCategoryContainer = styled.div`
   }
 `
 
-
-
 function Home () {
   return (
     <StyledHome>
@@ -152,7 +151,11 @@ function Home () {
             cryptocurrency
           </Paragraph>
         </FeaturedContent>
-        <FeaturesContainer>
+        <FeaturesContainer
+          initial={{ opacity: 0, translateY: '150px' }}
+          transition={{ duration: 2 }}
+          whileInView={{ opacity: 1, scale: 1, translateY: '0px' }}
+        >
           <Row type='horizontal'>
             <Card>
               <ButtonIcon>
@@ -243,8 +246,7 @@ function Home () {
 
       <GetStarted />
 
-      <Footer/>
-      
+      <Footer />
     </StyledHome>
   )
 }

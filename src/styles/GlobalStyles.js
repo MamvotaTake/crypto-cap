@@ -59,16 +59,20 @@ const GlobalStyles = createGlobalStyle`
         --image-opacity: 100%;
     }
 
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  overflow-wrap: break-word;
-  hyphens: auto;
-}
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        overflow-wrap: break-word;
+        hyphens: auto;
+    }
+    html {
+        scroll-snap-type: y mandatory;
+        scroll-behavior: smooth;
+    }
 
     *,
     *::before,

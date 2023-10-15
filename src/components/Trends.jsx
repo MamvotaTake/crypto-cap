@@ -7,8 +7,9 @@ import Rates from '../features/coins/Rates'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchCoins, selectAllCoins, selectTotalCoins } from '../features/coins/coinsSlice'
 import Spinner from './Spinner'
+import { motion } from 'framer-motion'
 
-const StyledTrends = styled.div`
+const StyledTrends = styled(motion.div)`
   display: flex;
   flex-direction: column;
   gap: 2.6rem;
@@ -38,11 +39,21 @@ function Trends () {
 
   return (
     <StyledTrends>
-      <h1>Market Trend</h1>
-      <Row type='horizontal'>
+      <motion.h1
+        initial={{ opacity: 0.5, visibility: "hidden" }}
+        transition={{ duration: 2.9, opacity: 0, }}
+        whileInView={{ opacity: 1, visibility: "visible"}}>
+        Market Trend
+      </motion.h1>
+      <Row type='horizontal' >
         <>
           {coins.map(coin => 
-            <Card key={coin.id}>
+            <Card key={coin.id}
+              initial={{ opacity: 0, translateY: ('-200px') }}
+              transition={{ duration: 1.6 }}
+              whileInView={{opacity: 1, translateY: ('0px') }}
+              >
+              
               <CoinInfo coin={coin } />
               <Rates coin={coin }/>
             </Card>
