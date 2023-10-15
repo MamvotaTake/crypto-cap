@@ -8,12 +8,16 @@ const Container = styled.div`
   flex-direction: column;
   padding: 2rem 5.625rem;
   cursor: pointer;
+  background-color: black;
+  color: white;
 `
 function Market () {
-    return <Container>
-        <MarketContainer></MarketContainer>
-        <Footer/>
-  </Container>
+  return (
+    <Container>
+      <MarketContainer />
+      <Footer />
+    </Container>
+  )
 }
 
 export default Market

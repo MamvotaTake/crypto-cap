@@ -7,26 +7,28 @@ import { selectAllCoins } from '../../features/coins/coinsSlice'
 import CoinDetails from '../../features/coins/CoinDetails'
 import Spinner from '../Spinner'
 import { useEffect } from 'react'
+import TradingViewWidget from './TradingViewWidget'
+// import TradingViewWidget, { Themes } from 'react-tradingview-widget'
 
 const StyledMarketsContainer = styled.div`
   display: flex;
-  width: 34.7%;
+  /* width: 34.7%; */
+  height: 100vh;
   flex-direction: column;
-  gap: 3rem;
+  gap: 1rem;
   margin-top: 8rem;
 `
 
 const Market = styled.div`
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  row-gap: 4rem;
-  column-gap: 3rem;
+  grid-template-columns: repeat(5, 1fr);
+  row-gap: .1rem;
+  column-gap: 1rem;
 `
 function MarketContainer () {
   const coins = useSelector(selectAllCoins)
   const isLoading = useSelector(state => state.coins.isLoading)
   const dispatch = useDispatch()
-
 
   useEffect(
     function () {
@@ -41,15 +43,7 @@ function MarketContainer () {
   )
   return (
     <StyledMarketsContainer>
-      <CoinHeader header='Markets' />
-      <TradeTableOperations />
-      {isLoading
-        ? <Spinner />
-        : <Market>
-          {coins.map((coin, index) =>
-            <CoinDetails key={index} coin={coin} />
-            )}
-        </Market>}
+      <TradingViewWidget/>
     </StyledMarketsContainer>
   )
 }

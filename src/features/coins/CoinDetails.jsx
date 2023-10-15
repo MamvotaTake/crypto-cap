@@ -14,11 +14,22 @@ import isLow from '../../assets/chart-state-minus.png'
 const Container = styled.div`
   display: flex;
   flex-direction: column;
+  transition: 0.5s;
+  z-index: 1;
 `
 const Coin = styled.div`
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  transition: .9s;
+  transform: translateY(-11.5rem);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  z-index: -1;
+
+  &:hover {
+    transform: translateY(18%);
+  }
 
   & p {
     display: flex;
@@ -67,6 +78,7 @@ const Content = styled.div`
   display: flex;
   flex-direction: column;
   gap: .8rem;
+  padding: 1rem;
 
   & div {
     display: flex;
@@ -74,11 +86,19 @@ const Content = styled.div`
   }
 `
 const ImageContainer = styled.div`
+  position: relative;
   display: flex;
   justify-content: center;
   background-color: var(--color-grey-600);
   border-radius: 2%;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
+  transition: .9s ease-in-out;
+  transform: translateY(100px);
+  z-index: 1;
+
+  /* &:hover {
+    transform: translateY(-30%);
+  } */
 
   & img {
     /* width: 20rem; */
